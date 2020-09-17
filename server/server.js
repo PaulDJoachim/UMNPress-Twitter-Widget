@@ -11,10 +11,8 @@ const passport = require("./strategies/user.strategy");
 
 // Route includes
 const userRouter = require("./routes/user.router");
-const widgetRouter = require("./routes/widget.router");
 const publicationRouter = require("./routes/publication.router");
 const tweetRouter = require("./routes/tweets.router");
-const bookPageRouter = require("./routes/bookpage.router");
 
 // Body parser middleware
 app.use(bodyParser.json({ limit: "1mb" }));
@@ -29,10 +27,8 @@ app.use(passport.session());
 
 /* Routes */
 app.use("/api/user", userRouter);
-app.use("/api/tweets", widgetRouter);
 app.use("/publications", publicationRouter);
 app.use("/tweets", tweetRouter);
-app.use("/api/books", bookPageRouter);
 
 // Serve static files
 app.use(express.static("build"));

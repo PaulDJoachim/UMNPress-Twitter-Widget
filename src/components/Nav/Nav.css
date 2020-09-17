@@ -30,6 +30,7 @@
 .link-bar {
   display: flex;
   padding: 30px;
+  text-decoration: none;
 }
 
 .nav-link:hover {
