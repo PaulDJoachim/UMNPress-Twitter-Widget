@@ -14,7 +14,6 @@ import Publications from "../Publications/Publications";
 import PublicationItem from "../PublicationItem/PublicationItem";
 import TweetsPage from "../TweetsPage/TweetsPage";
 import "./App.css";
-import BookPageMock from "../BookPageMock/BookPageMock";
 
 
 class App extends Component {
@@ -29,11 +28,9 @@ class App extends Component {
     return (
       <Router>
         <div>
-        {window.location.href.includes('/books/') ? null : 
-        (<Nav />)}
+        <Nav/>
           <Switch>
             <Redirect exact from="/" to="/publications" />
-            <Route exact path="/books/:publication_id" component={BookPageMock} />
             <ProtectedRoute exact path="/publications" component={Publications} />
             <ProtectedRoute exact path="/publications/:id" component={PublicationItem} />
             <ProtectedRoute exact path="/tweets" component={TweetsPage} />

@@ -379,13 +379,6 @@ class PublicationItem extends Component {
                     </Select>
                   </FormControl>
               </Box>
-              <Box display='flex'>
-              <Link to= {'/books/'+this.props.match.params.id} target="_blank">
-                <Button variant="contained" color="primary" >
-                  View Book Page &nbsp;<PlayArrowIcon/>
-              </Button>
-              </Link>
-              </Box>
             </Box>
         </Paper>
         

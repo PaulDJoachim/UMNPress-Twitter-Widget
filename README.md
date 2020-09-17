@@ -107,7 +107,6 @@ This code is also heavily commented. We recommend reading through the comments, 
 
 - src/components
   - App/App
-  - BookPage
   - CsvParser
   - PublicationItem
   - Publications
