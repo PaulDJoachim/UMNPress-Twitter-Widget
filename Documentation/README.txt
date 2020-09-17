@@ -52,6 +52,13 @@ To set up automated searches (no user interaction):
 * Note that the server must be running for the search to take place.
 
 
+To Create New Accounts:  
+* Registration of new accounts may be needed if the default login credentials are lost or compromised, or if multiple accounts are desired. Since any account has full access to the app, registration is disabled by default to prevent unauthorized users from creating accounts.
+* Registration can be re-enabled by un-commenting lines 116-124 of the LoginPage.js component. The registration button will be visible on the login view and will allow users to create new accounts.
+* It is recommended that you disable the registration again after new accounts are created by commenting out lines 116-124 of LoginPage.js again.
+
+
+
 Known issues:
 * Publication Items cannot be deleted from the database, be sure to review the CSV upload before accepting.
 * When a spreadsheet upload is accepted and the page is redirected to the Publications tab, the user must refresh the page (Mac: ⌘ + R Win: Ctrl + R or F5) to load the Publication data on the webpage. Subsequent visits do not require this step. 
