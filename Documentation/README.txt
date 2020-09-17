@@ -54,8 +54,8 @@ To set up automated searches (no user interaction):
 
 To Create New Accounts:  
 * Registration of new accounts may be needed if the default login credentials are lost or compromised, or if multiple accounts are desired. Since any account has full access to the app, registration is disabled by default to prevent unauthorized users from creating accounts.
-* Registration can be re-enabled by un-commenting lines 116-124 of the LoginPage.js component. The registration button will be visible on the login view and will allow users to create new accounts.
-* It is recommended that you disable the registration again after new accounts are created by commenting out lines 116-124 of LoginPage.js again.
+* Registration can be re-enabled by un-commenting lines 116-124 of the LoginPage.js and lines 18-26 of the user.router.js component. The registration button will be visible on the login view and will allow users to create new accounts.
+* It is recommended that you disable the registration again after new accounts are created by commenting out lines 116-124 of LoginPage.js and lines 18-26 of the user.router.js again.
 
 
 
