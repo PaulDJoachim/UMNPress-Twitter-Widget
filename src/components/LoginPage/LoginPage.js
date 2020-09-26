@@ -113,7 +113,7 @@ class LoginPage extends Component {
                 </Grid>
                 <Grid item>
                   <center>
-                    {/* <button
+                    <button
                       type="button"
                       className="link-button"
                       onClick={() => {
@@ -121,7 +121,7 @@ class LoginPage extends Component {
                       }}
                     >
                       Register
-                    </button> */}
+                    </button>
                   </center>
                 </Grid>
               </Paper>
